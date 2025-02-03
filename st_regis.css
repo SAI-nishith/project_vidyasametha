@@ -1,0 +1,101 @@
+/* Buttons Styling */
+button,
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Links Styling */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    form {
+        padding: 15px;
+        max-width: 400px; /* Reduce max-width for smaller screens */
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    body {
+        padding: 5px; /* Minimal padding for very small screens */
+    }
+
+    form {
+        padding: 10px;
+        max-width: 300px; /* Further reduce max-width */
+    }
+
+    input[type="email"],
+    input[type="password"] {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    button,
+    input[type="submit"] {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
+
+
+
+  @media (max-width: 768px) {
+    body{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  @media (max-width: 468px) {
+    body{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  @media (max-width: 768px) {
+    form{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  @media (max-width: 468px) {
+    form{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
